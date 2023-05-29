@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to use the tables</title>
+
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            padding: 10px;
+            border-collapse: collapse;
+
+        }
+        table{
+            width: 100%;
+            empty-cells: hide;
+            border-collapse: separate;
+            
+        }
+        th {
+            text-align: center;
+            empty-cells: hide;
+            border-collapse: separate;
+            background-color: yellowgreen;
+            color: blue;
+            height: 30px;
+            vertical-align:middle;
+        }
+
+        td{
+            height: 40px;
+            text-align: center;
+        }
+
+        tr:hover{
+            background-color: aqua;
+        }
+
+        tr:nth-child(even){
+            background-color: aquamarine;
+        }
+
+
+    </style>
+</head>
+
+<!-- 
+     <table> -- define a table. 
+        <tr> -- rows 
+        <th> -- table headers 
+        <td> -- content cells 
+        -->
+
+
+<body>
+    <table>
+
+        <tr>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Weeks on List</th>
+        </tr>
+
+        <tr>
+            <td>The mirror and the light</td>
+            <td>Hilary Mantel</td>
+            <td>New This Week</td>
+        </tr>
+
+        <tr>
+            <td>journey of the pharos</td>
+            <td></td>
+            <td>new this Weeks</td>
+        </tr>
+
+        <tr>
+            <td>American Dirt</td>
+            <td>Jeannie Cummings</td>
+            <td>8</td>
+        </tr>
+
+        <tr>
+            <td>Little Fires Everywhere</td>
+            <td>Celeste Ng</td>
+            <td>57</td>
+          </tr>
+    </table>
+</body>
+</html>
